@@ -1,0 +1,126 @@
+{
+  "id": "drift-004",
+  "name": "Ilex",
+  "cultureId": "aster",
+  "themeId": "frontier",
+  "seed": 3790413007,
+  "radius": 8780,
+  "chart": {
+    "x": -4.154,
+    "y": 0.177
+  },
+  "generation": {
+    "generatorVersion": 1,
+    "seed": 3790413007,
+    "presetId": "frontier"
+  },
+  "stations": [
+    {
+      "id": "drift-004-station-1",
+      "name": "Ilex Anchorage",
+      "position": {
+        "x": -486.17,
+        "y": 3856.365,
+        "z": 0
+      },
+      "size": "small",
+      "services": [
+        {
+          "kind": "market",
+          "config": {
+            "profileId": "drift-004-station-1-market"
+          }
+        },
+        {
+          "kind": "repair",
+          "config": {
+            "pricePerPoint": 2
+          }
+        }
+      ]
+    }
+  ],
+  "landmarks": [
+    {
+      "id": "drift-004-primary",
+      "name": "Ilex",
+      "kind": "planet",
+      "position": {
+        "x": 20,
+        "y": 265,
+        "z": 0
+      },
+      "radius": 950
+    }
+  ],
+  "gates": [
+    {
+      "id": "drift-004-gate-drift-002-drift-004",
+      "name": "Halcyon gateway",
+      "position": {
+        "x": 7029.625,
+        "y": -3560.72,
+        "z": 0
+      },
+      "radius": 140,
+      "connections": [
+        {
+          "id": "drift-004-to-drift-002",
+          "systemId": "drift-002",
+          "gateId": "drift-002-gate-drift-002-drift-004"
+        }
+      ]
+    }
+  ],
+  "traffic": [
+    {
+      "ship": {
+        "id": "drift-004-freight-1",
+        "name": "Ilex Runner",
+        "kind": "merchant",
+        "owner": "guild",
+        "factionId": "guild",
+        "role": "trader",
+        "position": {
+          "x": -161.17,
+          "y": 4131.365,
+          "z": 0
+        },
+        "velocity": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "heading": 1.5707963267948966,
+        "hull": 100,
+        "engines": 100,
+        "crew": 12,
+        "cargo": {},
+        "reload": [
+          0,
+          0
+        ]
+      },
+      "job": {
+        "kind": "freight",
+        "config": {
+          "route": [
+            {
+              "systemId": "drift-004",
+              "stationId": "drift-004-station-1"
+            },
+            {
+              "systemId": "kepler",
+              "stationId": "relay"
+            }
+          ],
+          "quantity": 12,
+          "loadingSeconds": 5,
+          "unloadingSeconds": 6
+        }
+      }
+    }
+  ],
+  "regionId": "lantern-marches",
+  "environmentId": "amber-dust"
+}

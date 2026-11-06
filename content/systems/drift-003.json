@@ -1,0 +1,138 @@
+{
+  "id": "drift-003",
+  "name": "Nacre",
+  "cultureId": "aster",
+  "themeId": "frontier",
+  "seed": 1422830096,
+  "radius": 8585,
+  "chart": {
+    "x": 0.381,
+    "y": 2.762
+  },
+  "generation": {
+    "generatorVersion": 1,
+    "seed": 1422830096,
+    "presetId": "frontier"
+  },
+  "stations": [
+    {
+      "id": "drift-003-station-1",
+      "name": "Nacre Anchorage",
+      "position": {
+        "x": 2035.46,
+        "y": 2429.135,
+        "z": 0
+      },
+      "size": "medium",
+      "services": [
+        {
+          "kind": "market",
+          "config": {
+            "profileId": "drift-003-station-1-market"
+          }
+        },
+        {
+          "kind": "repair",
+          "config": {
+            "pricePerPoint": 2
+          }
+        }
+      ]
+    }
+  ],
+  "landmarks": [
+    {
+      "id": "drift-003-primary",
+      "name": "Nacre",
+      "kind": "planet",
+      "position": {
+        "x": 200,
+        "y": 165,
+        "z": 0
+      },
+      "radius": 885
+    }
+  ],
+  "gates": [
+    {
+      "id": "drift-003-gate-drift-001-drift-003",
+      "name": "Lacuna gateway",
+      "position": {
+        "x": -7158.8,
+        "y": -2794.785,
+        "z": 0
+      },
+      "radius": 140,
+      "connections": [
+        {
+          "id": "drift-003-to-drift-001",
+          "systemId": "drift-001",
+          "gateId": "drift-001-gate-drift-001-drift-003"
+        }
+      ]
+    },
+    {
+      "id": "drift-003-gate-drift-003-drift-006",
+      "name": "Brume gateway",
+      "position": {
+        "x": -6629.875,
+        "y": 3886.385,
+        "z": 0
+      },
+      "radius": 140,
+      "connections": [
+        {
+          "id": "drift-003-to-drift-006",
+          "systemId": "drift-006",
+          "gateId": "drift-006-gate-drift-003-drift-006"
+        }
+      ]
+    }
+  ],
+  "traffic": [
+    {
+      "ship": {
+        "id": "drift-003-freight-1",
+        "name": "Nacre Runner",
+        "kind": "merchant",
+        "owner": "guild",
+        "factionId": "guild",
+        "role": "trader",
+        "position": {
+          "x": 2360.46,
+          "y": 2704.135,
+          "z": 0
+        },
+        "velocity": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "heading": 1.5707963267948966,
+        "hull": 100,
+        "engines": 100,
+        "crew": 12,
+        "cargo": {},
+        "reload": [
+          0,
+          0
+        ]
+      },
+      "job": {
+        "kind": "long-haul",
+        "config": {
+          "home": {
+            "systemId": "drift-003",
+            "stationId": "drift-003-station-1"
+          },
+          "quantity": 12,
+          "loadingSeconds": 5,
+          "unloadingSeconds": 6,
+          "minHops": 2
+        }
+      }
+    }
+  ],
+  "regionId": "lantern-marches",
+  "environmentId": "deep-void"
+}

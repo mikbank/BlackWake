@@ -1,0 +1,7 @@
+{
+  "schemaVersion": 1,
+  "systems": [
+    {"id": "vesper", "name": "Vesper", "seed": 93, "preset": "frontier", "chart": {"x": -1.2, "y": 0.7}}
+  ],
+  "connections": [{"from": "ashen", "to": "vesper"}]
+}

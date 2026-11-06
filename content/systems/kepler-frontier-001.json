@@ -1,0 +1,160 @@
+{
+  "id": "kepler-frontier-001",
+  "name": "Cinder",
+  "cultureId": "frontier",
+  "regionId": "ashen-frontier",
+  "themeId": "frontier",
+  "environmentId": "ion-blue",
+  "seed": 3306322247,
+  "radius": 8566,
+  "chart": {
+    "x": -0.106,
+    "y": 1.413
+  },
+  "generation": {
+    "generatorVersion": 2,
+    "seed": 3306322247,
+    "presetId": "frontier"
+  },
+  "stations": [
+    {
+      "id": "kepler-frontier-001-station-1",
+      "name": "Cinder Anchorage",
+      "position": {
+        "x": -877.286,
+        "y": 3188.872,
+        "z": 0
+      },
+      "size": "small",
+      "services": [
+        {
+          "kind": "market",
+          "config": {
+            "profileId": "kepler-frontier-001-station-1-market"
+          }
+        },
+        {
+          "kind": "repair",
+          "config": {
+            "pricePerPoint": 2
+          }
+        }
+      ]
+    }
+  ],
+  "landmarks": [
+    {
+      "id": "kepler-frontier-001-primary",
+      "name": "Cinder",
+      "kind": "planet",
+      "position": {
+        "x": -96,
+        "y": -131,
+        "z": 0
+      },
+      "radius": 848
+    }
+  ],
+  "gates": [
+    {
+      "id": "kepler-frontier-001-gate-kepler-kepler-frontier-001",
+      "name": "Kepler Drift gateway",
+      "position": {
+        "x": 5653.145,
+        "y": -5177.79,
+        "z": 0
+      },
+      "radius": 140,
+      "connections": [
+        {
+          "id": "kepler-frontier-001-to-kepler",
+          "systemId": "kepler",
+          "gateId": "kepler-gate-kepler-kepler-frontier-001"
+        }
+      ]
+    },
+    {
+      "id": "kepler-frontier-001-gate-kepler-frontier-001-kepler-frontier-002",
+      "name": "Sable gateway",
+      "position": {
+        "x": 2926.237,
+        "y": -7085.527,
+        "z": 0
+      },
+      "radius": 140,
+      "connections": [
+        {
+          "id": "kepler-frontier-001-to-kepler-frontier-002",
+          "systemId": "kepler-frontier-002",
+          "gateId": "kepler-frontier-002-gate-kepler-frontier-001-kepler-frontier-002"
+        }
+      ]
+    },
+    {
+      "id": "kepler-frontier-001-gate-kepler-frontier-001-kepler-frontier-003",
+      "name": "Redoubt gateway",
+      "position": {
+        "x": 7141.101,
+        "y": 2787.873,
+        "z": 0
+      },
+      "radius": 140,
+      "connections": [
+        {
+          "id": "kepler-frontier-001-to-kepler-frontier-003",
+          "systemId": "kepler-frontier-003",
+          "gateId": "kepler-frontier-003-gate-kepler-frontier-001-kepler-frontier-003"
+        }
+      ]
+    }
+  ],
+  "traffic": [
+    {
+      "ship": {
+        "id": "kepler-frontier-001-freight-1",
+        "name": "Cinder Runner 1",
+        "kind": "merchant",
+        "owner": "guild",
+        "factionId": "guild",
+        "role": "trader",
+        "position": {
+          "x": -577.286,
+          "y": 3188.872,
+          "z": 0
+        },
+        "velocity": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "heading": 1.5707963267948966,
+        "hull": 100,
+        "engines": 100,
+        "crew": 12,
+        "cargo": {},
+        "reload": [
+          0,
+          0
+        ]
+      },
+      "job": {
+        "kind": "freight",
+        "config": {
+          "route": [
+            {
+              "systemId": "kepler-frontier-001",
+              "stationId": "kepler-frontier-001-station-1"
+            },
+            {
+              "systemId": "drift-004",
+              "stationId": "drift-004-station-1"
+            }
+          ],
+          "quantity": 12,
+          "loadingSeconds": 5,
+          "unloadingSeconds": 6
+        }
+      }
+    }
+  ]
+}

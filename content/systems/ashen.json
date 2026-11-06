@@ -1,0 +1,281 @@
+{
+  "cultureId": "frontier",
+  "id": "ashen",
+  "name": "Ashen Reach",
+  "themeId": "frontier",
+  "seed": 17,
+  "radius": 8000,
+  "chart": {
+    "x": 0,
+    "y": 0
+  },
+  "landmarks": [
+    {
+      "id": "ashen-planet",
+      "name": "Ashen",
+      "kind": "planet",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "radius": 850
+    }
+  ],
+  "stations": [
+    {
+      "id": "haven",
+      "name": "Haven",
+      "position": {
+        "x": -1700,
+        "y": -1300,
+        "z": 0
+      },
+      "size": "small",
+      "services": [
+        {
+          "kind": "market",
+          "config": {
+            "profileId": "haven"
+          }
+        },
+        {
+          "kind": "repair",
+          "config": {
+            "pricePerPoint": 2
+          }
+        }
+      ]
+    }
+  ],
+  "gates": [
+    {
+      "id": "ashen-egress",
+      "name": "Hyperspace gateway",
+      "position": {
+        "x": 5900,
+        "y": 1900,
+        "z": 0
+      },
+      "radius": 140,
+      "connections": [
+        {
+          "id": "ashen-to-kepler",
+          "systemId": "kepler",
+          "gateId": "kepler-egress"
+        }
+      ]
+    },
+    {
+      "id": "ashen-gate-ashen-vesper",
+      "name": "Vesper gateway",
+      "position": {
+        "x": -6132.83,
+        "y": 3577.485,
+        "z": 0
+      },
+      "radius": 140,
+      "connections": [
+        {
+          "id": "ashen-to-vesper",
+          "systemId": "vesper",
+          "gateId": "vesper-gate-ashen-vesper"
+        }
+      ]
+    }
+  ],
+  "traffic": [
+    {
+      "ship": {
+        "id": "ashen-trader",
+        "name": "Gilded Gull",
+        "kind": "merchant",
+        "owner": "guild",
+        "factionId": "guild",
+        "role": "trader",
+        "position": {
+          "x": -1325,
+          "y": -1025,
+          "z": 0
+        },
+        "velocity": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "heading": 1.5707963267948966,
+        "hull": 100,
+        "engines": 100,
+        "crew": 12,
+        "cargo": {},
+        "reload": [
+          0,
+          0
+        ]
+      },
+      "job": {
+        "kind": "freight",
+        "config": {
+          "route": [
+            {
+              "systemId": "ashen",
+              "stationId": "haven"
+            },
+            {
+              "systemId": "kepler",
+              "stationId": "relay"
+            }
+          ],
+          "quantity": 12,
+          "loadingSeconds": 4
+        }
+      }
+    },
+    {
+      "ship": {
+        "id": "reach-transit",
+        "name": "Reach Connector",
+        "kind": "cutter",
+        "owner": "civilian",
+        "factionId": "guild",
+        "role": "trader",
+        "position": {
+          "x": -875,
+          "y": -1075,
+          "z": 0
+        },
+        "velocity": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "heading": 1.5707963267948966,
+        "hull": 100,
+        "engines": 100,
+        "crew": 18,
+        "cargo": {},
+        "reload": [
+          0,
+          0
+        ],
+        "livery": "transit"
+      },
+      "job": {
+        "kind": "passenger",
+        "config": {
+          "route": [
+            {
+              "systemId": "ashen",
+              "stationId": "haven"
+            },
+            {
+              "systemId": "kepler",
+              "stationId": "relay"
+            }
+          ],
+          "passengers": 24,
+          "boardingSeconds": 10
+        }
+      }
+    },
+    {
+      "ship": {
+        "id": "ashen-liner",
+        "name": "Aurora Leisure",
+        "kind": "merchant",
+        "owner": "civilian",
+        "factionId": "guild",
+        "role": "trader",
+        "position": {
+          "x": -1400,
+          "y": -500,
+          "z": 0
+        },
+        "velocity": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "heading": 1.5707963267948966,
+        "hull": 100,
+        "engines": 100,
+        "crew": 12,
+        "cargo": {
+          "fine-spirits": 6,
+          "spices": 4,
+          "luxury-textiles": 4,
+          "artwork": 1
+        },
+        "reload": [
+          0,
+          0
+        ],
+        "livery": "liner"
+      },
+      "job": {
+        "kind": "liner",
+        "config": {
+          "routing": "roaming",
+          "home": {
+            "systemId": "ashen",
+            "stationId": "haven"
+          },
+          "passengers": 80,
+          "stopSeconds": 9,
+          "tourLength": 4,
+          "minHops": 1
+        }
+      }
+    },
+    {
+      "ship": {
+        "id": "aster-thread",
+        "name": "Shared Horizon",
+        "kind": "cutter",
+        "owner": "civilian",
+        "factionId": "guild",
+        "role": "trader",
+        "position": {
+          "x": -600,
+          "y": -1450,
+          "z": 0
+        },
+        "velocity": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "heading": 1.5707963267948966,
+        "hull": 100,
+        "engines": 100,
+        "crew": 18,
+        "cargo": {},
+        "reload": [
+          0,
+          0
+        ],
+        "livery": "transit"
+      },
+      "job": {
+        "kind": "passenger",
+        "config": {
+          "route": [
+            {
+              "systemId": "ashen",
+              "stationId": "haven"
+            },
+            {
+              "systemId": "vesper",
+              "stationId": "vesper-station-1"
+            }
+          ],
+          "passengers": 30,
+          "boardingSeconds": 10
+        }
+      },
+      "cultureId": "aster"
+    }
+  ],
+  "regionId": "ashen-frontier",
+  "environmentId": "frontier-space"
+}

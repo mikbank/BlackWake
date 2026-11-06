@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "systems": [
+    {
+      "id": "kepler-frontier-001",
+      "name": "Cinder",
+      "seed": 3306322247,
+      "regionId": "ashen-frontier",
+      "chart": {
+        "x": -0.106,
+        "y": 1.413
+      },
+      "preset": "frontier",
+      "environmentId": "ion-blue"
+    },
+    {
+      "id": "kepler-frontier-002",
+      "name": "Sable",
+      "seed": 1678077100,
+      "regionId": "ashen-frontier",
+      "chart": {
+        "x": 1.185,
+        "y": -1.713
+      },
+      "preset": "frontier",
+      "environmentId": "frontier-space"
+    },
+    {
+      "id": "kepler-frontier-003",
+      "name": "Redoubt",
+      "seed": 789169717,
+      "regionId": "ashen-frontier",
+      "chart": {
+        "x": 2.581,
+        "y": 2.462
+      },
+      "preset": "frontier",
+      "environmentId": "deep-void"
+    },
+    {
+      "id": "kepler-frontier-004",
+      "name": "Farpoint",
+      "seed": 3455891866,
+      "regionId": "ashen-frontier",
+      "chart": {
+        "x": -1.954,
+        "y": -0.123
+      },
+      "preset": "frontier",
+      "environmentId": "ion-blue"
+    }
+  ],
+  "connections": [
+    {
+      "from": "kepler",
+      "to": "kepler-frontier-001"
+    },
+    {
+      "from": "kepler-frontier-001",
+      "to": "kepler-frontier-002"
+    },
+    {
+      "from": "kepler-frontier-001",
+      "to": "kepler-frontier-003"
+    },
+    {
+      "from": "kepler-frontier-002",
+      "to": "kepler-frontier-004"
+    }
+  ]
+}

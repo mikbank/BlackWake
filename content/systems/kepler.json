@@ -1,0 +1,206 @@
+{
+  "cultureId": "frontier",
+  "id": "kepler",
+  "name": "Kepler Drift",
+  "themeId": "frontier",
+  "seed": 28,
+  "radius": 8000,
+  "chart": {
+    "x": 1,
+    "y": 0.4
+  },
+  "landmarks": [
+    {
+      "id": "kepler-planet",
+      "name": "Kepler",
+      "kind": "planet",
+      "position": {
+        "x": 400,
+        "y": -300,
+        "z": 0
+      },
+      "radius": 1000
+    }
+  ],
+  "stations": [
+    {
+      "id": "relay",
+      "name": "Relay",
+      "position": {
+        "x": -1600,
+        "y": 1100,
+        "z": 0
+      },
+      "size": "medium",
+      "services": [
+        {
+          "kind": "market",
+          "config": {
+            "profileId": "relay"
+          }
+        },
+        {
+          "kind": "repair",
+          "config": {
+            "pricePerPoint": 2
+          }
+        }
+      ]
+    }
+  ],
+  "gates": [
+    {
+      "id": "kepler-egress",
+      "name": "Hyperspace gateway",
+      "position": {
+        "x": -5900,
+        "y": -1900,
+        "z": 0
+      },
+      "radius": 140,
+      "connections": [
+        {
+          "id": "kepler-to-ashen",
+          "systemId": "ashen",
+          "gateId": "ashen-egress"
+        }
+      ]
+    },
+    {
+      "id": "kepler-gate-kepler-kepler-frontier-001",
+      "name": "Cinder gateway",
+      "position": {
+        "x": -5235.759,
+        "y": 4795.501,
+        "z": 0
+      },
+      "radius": 140,
+      "connections": [
+        {
+          "id": "kepler-to-kepler-frontier-001",
+          "systemId": "kepler-frontier-001",
+          "gateId": "kepler-frontier-001-gate-kepler-kepler-frontier-001"
+        }
+      ]
+    }
+  ],
+  "traffic": [
+    {
+      "ship": {
+        "id": "kepler-trader",
+        "name": "Long Haul",
+        "kind": "merchant",
+        "owner": "guild",
+        "factionId": "guild",
+        "role": "trader",
+        "position": {
+          "x": -1225,
+          "y": 1375,
+          "z": 0
+        },
+        "velocity": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "heading": 1.5707963267948966,
+        "hull": 100,
+        "engines": 100,
+        "crew": 12,
+        "cargo": {},
+        "reload": [
+          0,
+          0
+        ]
+      },
+      "job": {
+        "kind": "freight",
+        "config": {
+          "route": [
+            {
+              "systemId": "kepler",
+              "stationId": "relay"
+            },
+            {
+              "systemId": "ashen",
+              "stationId": "haven"
+            }
+          ],
+          "quantity": 12,
+          "loadingSeconds": 7
+        }
+      }
+    },
+    {
+      "ship": {
+        "id": "kepler-patrol",
+        "name": "Marshal Seven",
+        "kind": "cutter",
+        "owner": "authority",
+        "factionId": "police",
+        "role": "trader",
+        "position": {
+          "x": -2500,
+          "y": 750,
+          "z": 0
+        },
+        "velocity": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "heading": 1.5707963267948966,
+        "hull": 100,
+        "engines": 100,
+        "crew": 18,
+        "cargo": {},
+        "reload": [
+          0,
+          0
+        ],
+        "livery": "police"
+      },
+      "job": {
+        "kind": "patrol",
+        "config": {
+          "holdSeconds": 5,
+          "responseRange": 5500,
+          "waypoints": [
+            {
+              "kind": "point",
+              "systemId": "kepler",
+              "position": {
+                "x": -2400,
+                "y": 900,
+                "z": 0
+              },
+              "label": "Relay approach"
+            },
+            {
+              "kind": "point",
+              "systemId": "kepler",
+              "position": {
+                "x": -4500,
+                "y": -1200,
+                "z": 0
+              },
+              "label": "Jump corridor"
+            },
+            {
+              "kind": "point",
+              "systemId": "kepler",
+              "position": {
+                "x": 800,
+                "y": 1800,
+                "z": 0
+              },
+              "label": "Kepler orbit"
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "regionId": "ashen-frontier",
+  "environmentId": "amber-dust"
+}

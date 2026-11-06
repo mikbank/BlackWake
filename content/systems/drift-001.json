@@ -1,0 +1,160 @@
+{
+  "id": "drift-001",
+  "name": "Lacuna",
+  "cultureId": "aster",
+  "themeId": "frontier",
+  "seed": 3939982626,
+  "radius": 8295,
+  "chart": {
+    "x": -2.306,
+    "y": 1.713
+  },
+  "generation": {
+    "generatorVersion": 1,
+    "seed": 3939982626,
+    "presetId": "frontier"
+  },
+  "stations": [
+    {
+      "id": "drift-001-station-1",
+      "name": "Lacuna Anchorage",
+      "position": {
+        "x": -1843.09,
+        "y": -1926.05,
+        "z": 0
+      },
+      "size": "medium",
+      "services": [
+        {
+          "kind": "market",
+          "config": {
+            "profileId": "drift-001-station-1-market"
+          }
+        },
+        {
+          "kind": "repair",
+          "config": {
+            "pricePerPoint": 2
+          }
+        }
+      ]
+    }
+  ],
+  "landmarks": [
+    {
+      "id": "drift-001-primary",
+      "name": "Lacuna",
+      "kind": "planet",
+      "position": {
+        "x": -30,
+        "y": -5,
+        "z": 0
+      },
+      "radius": 915
+    }
+  ],
+  "gates": [
+    {
+      "id": "drift-001-gate-drift-001-vesper",
+      "name": "Vesper gateway",
+      "position": {
+        "x": 5453.3,
+        "y": -4994.75,
+        "z": 0
+      },
+      "radius": 140,
+      "connections": [
+        {
+          "id": "drift-001-to-vesper",
+          "systemId": "vesper",
+          "gateId": "vesper-gate-drift-001-vesper"
+        }
+      ]
+    },
+    {
+      "id": "drift-001-gate-drift-001-drift-002",
+      "name": "Halcyon gateway",
+      "position": {
+        "x": 2822.79,
+        "y": -6835.045,
+        "z": 0
+      },
+      "radius": 140,
+      "connections": [
+        {
+          "id": "drift-001-to-drift-002",
+          "systemId": "drift-002",
+          "gateId": "drift-002-gate-drift-001-drift-002"
+        }
+      ]
+    },
+    {
+      "id": "drift-001-gate-drift-001-drift-003",
+      "name": "Nacre gateway",
+      "position": {
+        "x": 6888.655,
+        "y": 2689.32,
+        "z": 0
+      },
+      "radius": 140,
+      "connections": [
+        {
+          "id": "drift-001-to-drift-003",
+          "systemId": "drift-003",
+          "gateId": "drift-003-gate-drift-001-drift-003"
+        }
+      ]
+    }
+  ],
+  "traffic": [
+    {
+      "ship": {
+        "id": "drift-001-freight-1",
+        "name": "Lacuna Runner",
+        "kind": "merchant",
+        "owner": "guild",
+        "factionId": "guild",
+        "role": "trader",
+        "position": {
+          "x": -1518.09,
+          "y": -1651.05,
+          "z": 0
+        },
+        "velocity": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "heading": 1.5707963267948966,
+        "hull": 100,
+        "engines": 100,
+        "crew": 12,
+        "cargo": {},
+        "reload": [
+          0,
+          0
+        ]
+      },
+      "job": {
+        "kind": "freight",
+        "config": {
+          "route": [
+            {
+              "systemId": "drift-001",
+              "stationId": "drift-001-station-1"
+            },
+            {
+              "systemId": "kepler",
+              "stationId": "relay"
+            }
+          ],
+          "quantity": 12,
+          "loadingSeconds": 5,
+          "unloadingSeconds": 6
+        }
+      }
+    }
+  ],
+  "regionId": "lantern-marches",
+  "environmentId": "emerald-rift"
+}

@@ -1,0 +1,311 @@
+{
+  "id": "vesper",
+  "name": "Vesper",
+  "cultureId": "aster",
+  "themeId": "frontier",
+  "seed": 93,
+  "radius": 8950,
+  "chart": {
+    "x": -1.2,
+    "y": 0.7
+  },
+  "generation": {
+    "generatorVersion": 1,
+    "seed": 93,
+    "presetId": "frontier"
+  },
+  "stations": [
+    {
+      "id": "vesper-station-1",
+      "name": "Lantern Anchorage",
+      "position": {
+        "x": -593.22,
+        "y": 3340.62,
+        "z": 0
+      },
+      "size": "small",
+      "services": [
+        {
+          "kind": "market",
+          "config": {
+            "profileId": "vesper-station-1-market"
+          }
+        },
+        {
+          "kind": "repair",
+          "config": {
+            "pricePerPoint": 2
+          }
+        }
+      ],
+      "description": "A modest market and repair dock beneath the Lantern."
+    }
+  ],
+  "landmarks": [
+    {
+      "id": "vesper-primary",
+      "name": "The Lantern",
+      "kind": "planet",
+      "position": {
+        "x": -30,
+        "y": 275,
+        "z": 0
+      },
+      "radius": 1025,
+      "description": "Vesper\u2019s pale primary is known to local crews as the Lantern. Its anchorage serves ships crossing the outer frontier."
+    }
+  ],
+  "gates": [
+    {
+      "id": "vesper-gate-ashen-vesper",
+      "name": "Ashen Reach gateway",
+      "position": {
+        "x": 6953.42,
+        "y": -4056.16,
+        "z": 0
+      },
+      "radius": 140,
+      "connections": [
+        {
+          "id": "vesper-to-ashen",
+          "systemId": "ashen",
+          "gateId": "ashen-gate-ashen-vesper"
+        }
+      ]
+    },
+    {
+      "id": "vesper-gate-drift-001-vesper",
+      "name": "Lacuna gateway",
+      "position": {
+        "x": -5936.32,
+        "y": 5437.15,
+        "z": 0
+      },
+      "radius": 140,
+      "connections": [
+        {
+          "id": "vesper-to-drift-001",
+          "systemId": "drift-001",
+          "gateId": "drift-001-gate-drift-001-vesper"
+        }
+      ]
+    }
+  ],
+  "traffic": [
+    {
+      "ship": {
+        "id": "vesper-freight-1",
+        "name": "Vesper Runner 1",
+        "kind": "merchant",
+        "owner": "guild",
+        "factionId": "guild",
+        "role": "trader",
+        "position": {
+          "x": -268.22,
+          "y": 3615.62,
+          "z": 0
+        },
+        "velocity": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "heading": 1.5707963267948966,
+        "hull": 100,
+        "engines": 100,
+        "crew": 12,
+        "cargo": {},
+        "reload": [
+          0,
+          0
+        ],
+        "designId": "industrial-merchant"
+      },
+      "job": {
+        "kind": "freight",
+        "config": {
+          "route": [
+            {
+              "systemId": "vesper",
+              "stationId": "vesper-station-1"
+            },
+            {
+              "systemId": "kepler",
+              "stationId": "relay"
+            }
+          ],
+          "quantity": 12,
+          "loadingSeconds": 5,
+          "unloadingSeconds": 6
+        }
+      },
+      "cultureId": "frontier"
+    },
+    {
+      "ship": {
+        "id": "aster-cradle",
+        "name": "Patient Endeavour",
+        "kind": "merchant",
+        "owner": "guild",
+        "factionId": "guild",
+        "role": "trader",
+        "position": {
+          "x": -925,
+          "y": 3500,
+          "z": 0
+        },
+        "velocity": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "heading": 1.5707963267948966,
+        "hull": 100,
+        "engines": 100,
+        "crew": 12,
+        "cargo": {},
+        "reload": [
+          0,
+          0
+        ]
+      },
+      "job": {
+        "kind": "long-haul",
+        "config": {
+          "home": {
+            "systemId": "vesper",
+            "stationId": "vesper-station-1"
+          },
+          "quantity": 12,
+          "loadingSeconds": 5,
+          "unloadingSeconds": 6,
+          "minHops": 2
+        }
+      },
+      "cultureId": "aster"
+    },
+    {
+      "ship": {
+        "id": "aster-commonlight",
+        "name": "Room for Everyone",
+        "kind": "merchant",
+        "owner": "civilian",
+        "factionId": "guild",
+        "role": "trader",
+        "position": {
+          "x": -1225,
+          "y": 3000,
+          "z": 0
+        },
+        "velocity": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "heading": 1.5707963267948966,
+        "hull": 100,
+        "engines": 100,
+        "crew": 12,
+        "cargo": {
+          "spices": 6,
+          "luxury-textiles": 5,
+          "artwork": 2,
+          "jewellery": 2
+        },
+        "reload": [
+          0,
+          0
+        ],
+        "livery": "liner"
+      },
+      "job": {
+        "kind": "liner",
+        "config": {
+          "routing": "roaming",
+          "home": {
+            "systemId": "vesper",
+            "stationId": "vesper-station-1"
+          },
+          "passengers": 96,
+          "stopSeconds": 9,
+          "tourLength": 4,
+          "minHops": 1
+        }
+      },
+      "cultureId": "aster"
+    },
+    {
+      "ship": {
+        "id": "aster-warden",
+        "name": "Mutual Assurance",
+        "kind": "cutter",
+        "owner": "authority",
+        "factionId": "police",
+        "role": "trader",
+        "position": {
+          "x": 0,
+          "y": 2900,
+          "z": 0
+        },
+        "velocity": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "heading": 1.5707963267948966,
+        "hull": 100,
+        "engines": 100,
+        "crew": 18,
+        "cargo": {},
+        "reload": [
+          0,
+          0
+        ],
+        "livery": "police"
+      },
+      "job": {
+        "kind": "patrol",
+        "config": {
+          "holdSeconds": 5,
+          "responseRange": 5500,
+          "waypoints": [
+            {
+              "kind": "point",
+              "systemId": "vesper",
+              "position": {
+                "x": -1000,
+                "y": 2850,
+                "z": 0
+              },
+              "label": "Anchorage approach"
+            },
+            {
+              "kind": "point",
+              "systemId": "vesper",
+              "position": {
+                "x": 5500,
+                "y": -3250,
+                "z": 0
+              },
+              "label": "Ashen corridor"
+            },
+            {
+              "kind": "point",
+              "systemId": "vesper",
+              "position": {
+                "x": 1600,
+                "y": 1000,
+                "z": 0
+              },
+              "label": "Lantern watch"
+            }
+          ]
+        }
+      },
+      "cultureId": "aster"
+    }
+  ],
+  "description": "The Aster Compact tends the Lantern and its cooperative anchorage. Frontier freighters share its jump corridor.",
+  "regionId": "lantern-marches",
+  "environmentId": "violet-veil"
+}

@@ -1,0 +1,126 @@
+{
+  "id": "drift-006",
+  "name": "Brume",
+  "cultureId": "aster",
+  "themeId": "frontier",
+  "seed": 1273260477,
+  "radius": 7640,
+  "chart": {
+    "x": -2.154,
+    "y": 4.248
+  },
+  "generation": {
+    "generatorVersion": 1,
+    "seed": 1273260477,
+    "presetId": "frontier"
+  },
+  "stations": [
+    {
+      "id": "drift-006-station-1",
+      "name": "Brume Anchorage",
+      "position": {
+        "x": 1736.155,
+        "y": -2150.105,
+        "z": 0
+      },
+      "size": "medium",
+      "services": [
+        {
+          "kind": "market",
+          "config": {
+            "profileId": "drift-006-station-1-market"
+          }
+        },
+        {
+          "kind": "repair",
+          "config": {
+            "pricePerPoint": 2
+          }
+        }
+      ]
+    }
+  ],
+  "landmarks": [
+    {
+      "id": "drift-006-primary",
+      "name": "Brume",
+      "kind": "planet",
+      "position": {
+        "x": -200,
+        "y": 70,
+        "z": 0
+      },
+      "radius": 805
+    }
+  ],
+  "gates": [
+    {
+      "id": "drift-006-gate-drift-003-drift-006",
+      "name": "Nacre gateway",
+      "position": {
+        "x": 5814.62,
+        "y": -3408.49,
+        "z": 0
+      },
+      "radius": 140,
+      "connections": [
+        {
+          "id": "drift-006-to-drift-003",
+          "systemId": "drift-003",
+          "gateId": "drift-003-gate-drift-003-drift-006"
+        }
+      ]
+    }
+  ],
+  "traffic": [
+    {
+      "ship": {
+        "id": "drift-006-freight-1",
+        "name": "Brume Runner",
+        "kind": "merchant",
+        "owner": "guild",
+        "factionId": "guild",
+        "role": "trader",
+        "position": {
+          "x": 2061.155,
+          "y": -1875.105,
+          "z": 0
+        },
+        "velocity": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "heading": 1.5707963267948966,
+        "hull": 100,
+        "engines": 100,
+        "crew": 12,
+        "cargo": {},
+        "reload": [
+          0,
+          0
+        ]
+      },
+      "job": {
+        "kind": "freight",
+        "config": {
+          "route": [
+            {
+              "systemId": "drift-006",
+              "stationId": "drift-006-station-1"
+            },
+            {
+              "systemId": "kepler",
+              "stationId": "relay"
+            }
+          ],
+          "quantity": 12,
+          "loadingSeconds": 5,
+          "unloadingSeconds": 6
+        }
+      }
+    }
+  ],
+  "regionId": "lantern-marches",
+  "environmentId": "frontier-space"
+}

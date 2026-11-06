@@ -1,0 +1,97 @@
+{
+  "schemaVersion": 1,
+  "systems": [
+    {
+      "id": "drift-001",
+      "name": "Lacuna",
+      "seed": 3939982626,
+      "preset": "frontier",
+      "regionId": "lantern-marches",
+      "chart": {
+        "x": -2.306,
+        "y": 1.713
+      }
+    },
+    {
+      "id": "drift-002",
+      "name": "Halcyon",
+      "seed": 533922713,
+      "preset": "frontier",
+      "regionId": "lantern-marches",
+      "chart": {
+        "x": -1.015,
+        "y": -1.413
+      }
+    },
+    {
+      "id": "drift-003",
+      "name": "Nacre",
+      "seed": 1422830096,
+      "preset": "frontier",
+      "regionId": "lantern-marches",
+      "chart": {
+        "x": 0.381,
+        "y": 2.762
+      }
+    },
+    {
+      "id": "drift-004",
+      "name": "Ilex",
+      "seed": 3790413007,
+      "preset": "frontier",
+      "regionId": "lantern-marches",
+      "chart": {
+        "x": -4.154,
+        "y": 0.177
+      }
+    },
+    {
+      "id": "drift-005",
+      "name": "Meridian",
+      "seed": 384353094,
+      "preset": "frontier",
+      "regionId": "lantern-marches",
+      "chart": {
+        "x": 1.63,
+        "y": -1.1
+      }
+    },
+    {
+      "id": "drift-006",
+      "name": "Brume",
+      "seed": 1273260477,
+      "preset": "frontier",
+      "regionId": "lantern-marches",
+      "chart": {
+        "x": -2.154,
+        "y": 4.248
+      }
+    }
+  ],
+  "connections": [
+    {
+      "from": "vesper",
+      "to": "drift-001"
+    },
+    {
+      "from": "drift-001",
+      "to": "drift-002"
+    },
+    {
+      "from": "drift-001",
+      "to": "drift-003"
+    },
+    {
+      "from": "drift-002",
+      "to": "drift-004"
+    },
+    {
+      "from": "drift-002",
+      "to": "drift-005"
+    },
+    {
+      "from": "drift-003",
+      "to": "drift-006"
+    }
+  ]
+}

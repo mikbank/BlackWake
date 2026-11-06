@@ -1,0 +1,143 @@
+{
+  "id": "kepler-frontier-002",
+  "name": "Sable",
+  "cultureId": "frontier",
+  "regionId": "ashen-frontier",
+  "themeId": "frontier",
+  "environmentId": "frontier-space",
+  "seed": 1678077100,
+  "radius": 7502,
+  "chart": {
+    "x": 1.185,
+    "y": -1.713
+  },
+  "generation": {
+    "generatorVersion": 2,
+    "seed": 1678077100,
+    "presetId": "frontier"
+  },
+  "stations": [
+    {
+      "id": "kepler-frontier-002-station-1",
+      "name": "Sable Anchorage",
+      "position": {
+        "x": -1358.178,
+        "y": -1754.13,
+        "z": 0
+      },
+      "size": "small",
+      "services": [
+        {
+          "kind": "market",
+          "config": {
+            "profileId": "kepler-frontier-002-station-1-market"
+          }
+        },
+        {
+          "kind": "repair",
+          "config": {
+            "pricePerPoint": 2
+          }
+        }
+      ]
+    }
+  ],
+  "landmarks": [
+    {
+      "id": "kepler-frontier-002-primary",
+      "name": "Sable",
+      "kind": "planet",
+      "position": {
+        "x": 142,
+        "y": 292,
+        "z": 0
+      },
+      "radius": 765
+    }
+  ],
+  "gates": [
+    {
+      "id": "kepler-frontier-002-gate-kepler-frontier-001-kepler-frontier-002",
+      "name": "Cinder gateway",
+      "position": {
+        "x": -2520.091,
+        "y": 6102.094,
+        "z": 0
+      },
+      "radius": 140,
+      "connections": [
+        {
+          "id": "kepler-frontier-002-to-kepler-frontier-001",
+          "systemId": "kepler-frontier-001",
+          "gateId": "kepler-frontier-001-gate-kepler-frontier-001-kepler-frontier-002"
+        }
+      ]
+    },
+    {
+      "id": "kepler-frontier-002-gate-kepler-frontier-002-kepler-frontier-004",
+      "name": "Farpoint gateway",
+      "position": {
+        "x": -5889.543,
+        "y": 2983.235,
+        "z": 0
+      },
+      "radius": 140,
+      "connections": [
+        {
+          "id": "kepler-frontier-002-to-kepler-frontier-004",
+          "systemId": "kepler-frontier-004",
+          "gateId": "kepler-frontier-004-gate-kepler-frontier-002-kepler-frontier-004"
+        }
+      ]
+    }
+  ],
+  "traffic": [
+    {
+      "ship": {
+        "id": "kepler-frontier-002-freight-1",
+        "name": "Sable Runner 1",
+        "kind": "merchant",
+        "owner": "guild",
+        "factionId": "guild",
+        "role": "trader",
+        "position": {
+          "x": -1102.4206433821485,
+          "y": -1597.3238313208024,
+          "z": 0
+        },
+        "velocity": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "heading": 1.5707963267948966,
+        "hull": 100,
+        "engines": 100,
+        "crew": 12,
+        "cargo": {},
+        "reload": [
+          0,
+          0
+        ]
+      },
+      "job": {
+        "kind": "freight",
+        "config": {
+          "route": [
+            {
+              "systemId": "kepler-frontier-002",
+              "stationId": "kepler-frontier-002-station-1"
+            },
+            {
+              "systemId": "drift-004",
+              "stationId": "drift-004-station-1"
+            }
+          ],
+          "quantity": 12,
+          "loadingSeconds": 5,
+          "unloadingSeconds": 6
+        }
+      }
+    }
+  ]
+}

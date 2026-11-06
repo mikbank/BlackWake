@@ -1,0 +1,121 @@
+{
+  "id": "drift-005",
+  "name": "Meridian",
+  "cultureId": "aster",
+  "themeId": "frontier",
+  "seed": 384353094,
+  "radius": 8400,
+  "chart": {
+    "x": 1.63,
+    "y": -1.1
+  },
+  "generation": {
+    "generatorVersion": 1,
+    "seed": 384353094,
+    "presetId": "frontier"
+  },
+  "stations": [
+    {
+      "id": "drift-005-station-1",
+      "name": "Meridian Anchorage",
+      "position": {
+        "x": -2049.58,
+        "y": 2420.12,
+        "z": 0
+      },
+      "size": "small",
+      "services": [
+        {
+          "kind": "market",
+          "config": {
+            "profileId": "drift-005-station-1-market"
+          }
+        },
+        {
+          "kind": "repair",
+          "config": {
+            "pricePerPoint": 2
+          }
+        }
+      ]
+    }
+  ],
+  "landmarks": [
+    {
+      "id": "drift-005-primary",
+      "name": "Meridian",
+      "kind": "planet",
+      "position": {
+        "x": 290,
+        "y": 140,
+        "z": 0
+      },
+      "radius": 775
+    }
+  ],
+  "gates": [
+    {
+      "id": "drift-005-gate-drift-002-drift-005",
+      "name": "Halcyon gateway",
+      "position": {
+        "x": -7448.03,
+        "y": -881.375,
+        "z": 0
+      },
+      "radius": 140,
+      "connections": [
+        {
+          "id": "drift-005-to-drift-002",
+          "systemId": "drift-002",
+          "gateId": "drift-002-gate-drift-002-drift-005"
+        }
+      ]
+    }
+  ],
+  "traffic": [
+    {
+      "ship": {
+        "id": "drift-005-freight-1",
+        "name": "Meridian Runner",
+        "kind": "merchant",
+        "owner": "guild",
+        "factionId": "guild",
+        "role": "trader",
+        "position": {
+          "x": -1724.58,
+          "y": 2695.12,
+          "z": 0
+        },
+        "velocity": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "heading": 1.5707963267948966,
+        "hull": 100,
+        "engines": 100,
+        "crew": 12,
+        "cargo": {},
+        "reload": [
+          0,
+          0
+        ]
+      },
+      "job": {
+        "kind": "long-haul",
+        "config": {
+          "home": {
+            "systemId": "drift-005",
+            "stationId": "drift-005-station-1"
+          },
+          "quantity": 12,
+          "loadingSeconds": 5,
+          "unloadingSeconds": 6,
+          "minHops": 2
+        }
+      }
+    }
+  ],
+  "regionId": "lantern-marches",
+  "environmentId": "violet-veil"
+}

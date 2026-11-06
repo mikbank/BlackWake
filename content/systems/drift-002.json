@@ -1,0 +1,160 @@
+{
+  "id": "drift-002",
+  "name": "Halcyon",
+  "cultureId": "aster",
+  "themeId": "frontier",
+  "seed": 533922713,
+  "radius": 8605,
+  "chart": {
+    "x": -1.015,
+    "y": -1.413
+  },
+  "generation": {
+    "generatorVersion": 1,
+    "seed": 533922713,
+    "presetId": "frontier"
+  },
+  "stations": [
+    {
+      "id": "drift-002-station-1",
+      "name": "Halcyon Anchorage",
+      "position": {
+        "x": -2553.525,
+        "y": 676.645,
+        "z": 0
+      },
+      "size": "medium",
+      "services": [
+        {
+          "kind": "market",
+          "config": {
+            "profileId": "drift-002-station-1-market"
+          }
+        },
+        {
+          "kind": "repair",
+          "config": {
+            "pricePerPoint": 2
+          }
+        }
+      ]
+    }
+  ],
+  "landmarks": [
+    {
+      "id": "drift-002-primary",
+      "name": "Halcyon",
+      "kind": "planet",
+      "position": {
+        "x": -165,
+        "y": -185,
+        "z": 0
+      },
+      "radius": 765
+    }
+  ],
+  "gates": [
+    {
+      "id": "drift-002-gate-drift-001-drift-002",
+      "name": "Lacuna gateway",
+      "position": {
+        "x": -2941.125,
+        "y": 7121.575,
+        "z": 0
+      },
+      "radius": 140,
+      "connections": [
+        {
+          "id": "drift-002-to-drift-001",
+          "systemId": "drift-001",
+          "gateId": "drift-001-gate-drift-001-drift-002"
+        }
+      ]
+    },
+    {
+      "id": "drift-002-gate-drift-002-drift-004",
+      "name": "Ilex gateway",
+      "position": {
+        "x": -6873.51,
+        "y": 3481.645,
+        "z": 0
+      },
+      "radius": 140,
+      "connections": [
+        {
+          "id": "drift-002-to-drift-004",
+          "systemId": "drift-004",
+          "gateId": "drift-004-gate-drift-002-drift-004"
+        }
+      ]
+    },
+    {
+      "id": "drift-002-gate-drift-002-drift-005",
+      "name": "Meridian gateway",
+      "position": {
+        "x": 7651.61,
+        "y": 905.465,
+        "z": 0
+      },
+      "radius": 140,
+      "connections": [
+        {
+          "id": "drift-002-to-drift-005",
+          "systemId": "drift-005",
+          "gateId": "drift-005-gate-drift-002-drift-005"
+        }
+      ]
+    }
+  ],
+  "traffic": [
+    {
+      "ship": {
+        "id": "drift-002-freight-1",
+        "name": "Halcyon Runner",
+        "kind": "merchant",
+        "owner": "guild",
+        "factionId": "guild",
+        "role": "trader",
+        "position": {
+          "x": -2228.525,
+          "y": 951.645,
+          "z": 0
+        },
+        "velocity": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "heading": 1.5707963267948966,
+        "hull": 100,
+        "engines": 100,
+        "crew": 12,
+        "cargo": {},
+        "reload": [
+          0,
+          0
+        ]
+      },
+      "job": {
+        "kind": "freight",
+        "config": {
+          "route": [
+            {
+              "systemId": "drift-002",
+              "stationId": "drift-002-station-1"
+            },
+            {
+              "systemId": "kepler",
+              "stationId": "relay"
+            }
+          ],
+          "quantity": 12,
+          "loadingSeconds": 5,
+          "unloadingSeconds": 6
+        }
+      }
+    }
+  ],
+  "regionId": "lantern-marches",
+  "environmentId": "ion-blue"
+}

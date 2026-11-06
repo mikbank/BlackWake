@@ -1,0 +1,30 @@
+{
+  "name": "blackwake",
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "tsc --noEmit && vite build",
+    "test": "node --import tsx src/simulation.test.ts && node --import tsx src/traffic.test.ts && node --import tsx src/traffic-extension.test.ts && node --import tsx src/culture.test.ts && node --import tsx src/aster.test.ts && node --import tsx src/free-roam.test.ts && node --import tsx src/market.test.ts && node --import tsx src/ship-model-variants.test.ts && node --import tsx src/universe.test.ts && node --import tsx src/regions.test.ts && node --import tsx src/cruise.test.ts && node --import tsx src/save-store.test.ts && node --import tsx src/ecs.test.ts && node --import tsx src/flight-camera.test.ts && node --import tsx src/transit.test.ts && node --import tsx src/gateway-visuals.test.ts && node --import tsx src/environments.test.ts && node --import tsx src/scale.test.ts && node --import tsx src/roaming.test.ts && node --import tsx src/traffic-warmup.test.ts",
+    "universe:validate": "node --import tsx tools/universe.ts validate --check-index",
+    "universe:sync": "node --import tsx tools/universe.ts sync",
+    "universe:generate": "node --import tsx tools/universe.ts generate",
+    "system:create": "node --import tsx tools/universe.ts create",
+    "system:connect": "node --import tsx tools/universe.ts connect",
+    "prebuild": "npm run universe:validate",
+    "predev": "npm run universe:sync",
+    "pretest": "npm run universe:validate",
+    "universe:environments": "node --import tsx tools/universe.ts environments"
+  },
+  "dependencies": {
+    "three": "0.180.0"
+  },
+  "devDependencies": {
+    "@types/node": "24.10.1",
+    "@types/three": "0.180.0",
+    "fake-indexeddb": "^6.2.4",
+    "tsx": "4.20.6",
+    "typescript": "5.8.3",
+    "vite": "6.3.6"
+  }
+}

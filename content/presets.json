@@ -1,0 +1,639 @@
+{
+  "schemaVersion": 1,
+  "presets": {
+    "frontier": {
+      "id": "frontier",
+      "cultureId": "frontier",
+      "themeId": "frontier",
+      "radius": [
+        7500,
+        9000
+      ],
+      "landmark": {
+        "kind": "planet",
+        "radius": [
+          750,
+          1050
+        ]
+      },
+      "stations": {
+        "count": [
+          1,
+          1
+        ],
+        "sizes": [
+          "small",
+          "medium"
+        ],
+        "services": [
+          {
+            "kind": "market",
+            "config": {
+              "profileId": "$market"
+            }
+          },
+          {
+            "kind": "repair",
+            "config": {
+              "pricePerPoint": 2
+            }
+          }
+        ],
+        "goods": {
+          "rations": {
+            "price": [
+              13,
+              20
+            ],
+            "stock": [
+              45,
+              90
+            ]
+          },
+          "parts": {
+            "price": [
+              29,
+              42
+            ],
+            "stock": [
+              30,
+              75
+            ]
+          },
+          "water": {
+            "price": [
+              6,
+              9
+            ],
+            "bidPrice": [
+              5,
+              6
+            ],
+            "stock": [
+              25,
+              85
+            ],
+            "availability": 0.7
+          },
+          "oxygen": {
+            "price": [
+              10,
+              15
+            ],
+            "bidPrice": [
+              8,
+              10
+            ],
+            "stock": [
+              25,
+              85
+            ],
+            "availability": 0.7
+          },
+          "grain": {
+            "price": [
+              7,
+              11
+            ],
+            "bidPrice": [
+              6,
+              7
+            ],
+            "stock": [
+              25,
+              85
+            ],
+            "availability": 0.7
+          },
+          "algae": {
+            "price": [
+              9,
+              14
+            ],
+            "bidPrice": [
+              7,
+              9
+            ],
+            "stock": [
+              25,
+              85
+            ],
+            "availability": 0.7
+          },
+          "medicine": {
+            "price": [
+              42,
+              65
+            ],
+            "bidPrice": [
+              34,
+              42
+            ],
+            "stock": [
+              25,
+              85
+            ],
+            "availability": 0.7
+          },
+          "fuel": {
+            "price": [
+              22,
+              35
+            ],
+            "bidPrice": [
+              18,
+              22
+            ],
+            "stock": [
+              25,
+              85
+            ],
+            "availability": 0.7
+          },
+          "ore": {
+            "price": [
+              14,
+              22
+            ],
+            "bidPrice": [
+              12,
+              14
+            ],
+            "stock": [
+              25,
+              85
+            ],
+            "availability": 0.7
+          },
+          "metals": {
+            "price": [
+              34,
+              52
+            ],
+            "bidPrice": [
+              27,
+              34
+            ],
+            "stock": [
+              25,
+              85
+            ],
+            "availability": 0.7
+          },
+          "polymers": {
+            "price": [
+              19,
+              30
+            ],
+            "bidPrice": [
+              16,
+              19
+            ],
+            "stock": [
+              25,
+              85
+            ],
+            "availability": 0.7
+          },
+          "electronics": {
+            "price": [
+              68,
+              106
+            ],
+            "bidPrice": [
+              55,
+              68
+            ],
+            "stock": [
+              8,
+              30
+            ],
+            "availability": 0.4
+          },
+          "machinery": {
+            "price": [
+              108,
+              169
+            ],
+            "bidPrice": [
+              88,
+              108
+            ],
+            "stock": [
+              8,
+              30
+            ],
+            "availability": 0.4
+          },
+          "rare-minerals": {
+            "price": [
+              100,
+              156
+            ],
+            "bidPrice": [
+              81,
+              100
+            ],
+            "stock": [
+              8,
+              30
+            ],
+            "availability": 0.4
+          },
+          "spices": {
+            "price": [
+              64,
+              100
+            ],
+            "bidPrice": [
+              52,
+              64
+            ],
+            "stock": [
+              8,
+              30
+            ],
+            "availability": 0.4
+          },
+          "fine-spirits": {
+            "price": [
+              84,
+              131
+            ],
+            "bidPrice": [
+              68,
+              84
+            ],
+            "stock": [
+              8,
+              30
+            ],
+            "availability": 0.4
+          },
+          "luxury-textiles": {
+            "price": [
+              112,
+              175
+            ],
+            "bidPrice": [
+              91,
+              112
+            ],
+            "stock": [
+              8,
+              30
+            ],
+            "availability": 0.4
+          },
+          "research-data": {
+            "price": [
+              132,
+              206
+            ],
+            "bidPrice": [
+              107,
+              132
+            ],
+            "stock": [
+              8,
+              30
+            ],
+            "availability": 0.4
+          }
+        }
+      },
+      "traffic": [
+        {
+          "kind": "freight",
+          "shipKind": "merchant",
+          "owner": "guild",
+          "factionId": "guild",
+          "count": 1
+        }
+      ],
+      "environmentIds": [
+        "frontier-space",
+        "ion-blue",
+        "amber-dust",
+        "deep-void"
+      ]
+    },
+    "long-haul": {
+      "id": "long-haul",
+      "cultureId": "frontier",
+      "themeId": "frontier",
+      "radius": [
+        7500,
+        9000
+      ],
+      "landmark": {
+        "kind": "planet",
+        "radius": [
+          750,
+          1050
+        ]
+      },
+      "stations": {
+        "count": [
+          1,
+          1
+        ],
+        "sizes": [
+          "small",
+          "medium"
+        ],
+        "services": [
+          {
+            "kind": "market",
+            "config": {
+              "profileId": "$market"
+            }
+          },
+          {
+            "kind": "repair",
+            "config": {
+              "pricePerPoint": 2
+            }
+          }
+        ],
+        "goods": {
+          "rations": {
+            "price": [
+              13,
+              20
+            ],
+            "stock": [
+              45,
+              90
+            ]
+          },
+          "parts": {
+            "price": [
+              29,
+              42
+            ],
+            "stock": [
+              30,
+              75
+            ]
+          },
+          "water": {
+            "price": [
+              6,
+              9
+            ],
+            "bidPrice": [
+              5,
+              6
+            ],
+            "stock": [
+              25,
+              85
+            ],
+            "availability": 0.7
+          },
+          "oxygen": {
+            "price": [
+              10,
+              15
+            ],
+            "bidPrice": [
+              8,
+              10
+            ],
+            "stock": [
+              25,
+              85
+            ],
+            "availability": 0.7
+          },
+          "grain": {
+            "price": [
+              7,
+              11
+            ],
+            "bidPrice": [
+              6,
+              7
+            ],
+            "stock": [
+              25,
+              85
+            ],
+            "availability": 0.7
+          },
+          "algae": {
+            "price": [
+              9,
+              14
+            ],
+            "bidPrice": [
+              7,
+              9
+            ],
+            "stock": [
+              25,
+              85
+            ],
+            "availability": 0.7
+          },
+          "medicine": {
+            "price": [
+              42,
+              65
+            ],
+            "bidPrice": [
+              34,
+              42
+            ],
+            "stock": [
+              25,
+              85
+            ],
+            "availability": 0.7
+          },
+          "fuel": {
+            "price": [
+              22,
+              35
+            ],
+            "bidPrice": [
+              18,
+              22
+            ],
+            "stock": [
+              25,
+              85
+            ],
+            "availability": 0.7
+          },
+          "ore": {
+            "price": [
+              14,
+              22
+            ],
+            "bidPrice": [
+              12,
+              14
+            ],
+            "stock": [
+              25,
+              85
+            ],
+            "availability": 0.7
+          },
+          "metals": {
+            "price": [
+              34,
+              52
+            ],
+            "bidPrice": [
+              27,
+              34
+            ],
+            "stock": [
+              25,
+              85
+            ],
+            "availability": 0.7
+          },
+          "polymers": {
+            "price": [
+              19,
+              30
+            ],
+            "bidPrice": [
+              16,
+              19
+            ],
+            "stock": [
+              25,
+              85
+            ],
+            "availability": 0.7
+          },
+          "electronics": {
+            "price": [
+              68,
+              106
+            ],
+            "bidPrice": [
+              55,
+              68
+            ],
+            "stock": [
+              8,
+              30
+            ],
+            "availability": 0.4
+          },
+          "machinery": {
+            "price": [
+              108,
+              169
+            ],
+            "bidPrice": [
+              88,
+              108
+            ],
+            "stock": [
+              8,
+              30
+            ],
+            "availability": 0.4
+          },
+          "rare-minerals": {
+            "price": [
+              100,
+              156
+            ],
+            "bidPrice": [
+              81,
+              100
+            ],
+            "stock": [
+              8,
+              30
+            ],
+            "availability": 0.4
+          },
+          "spices": {
+            "price": [
+              64,
+              100
+            ],
+            "bidPrice": [
+              52,
+              64
+            ],
+            "stock": [
+              8,
+              30
+            ],
+            "availability": 0.4
+          },
+          "fine-spirits": {
+            "price": [
+              84,
+              131
+            ],
+            "bidPrice": [
+              68,
+              84
+            ],
+            "stock": [
+              8,
+              30
+            ],
+            "availability": 0.4
+          },
+          "luxury-textiles": {
+            "price": [
+              112,
+              175
+            ],
+            "bidPrice": [
+              91,
+              112
+            ],
+            "stock": [
+              8,
+              30
+            ],
+            "availability": 0.4
+          },
+          "research-data": {
+            "price": [
+              132,
+              206
+            ],
+            "bidPrice": [
+              107,
+              132
+            ],
+            "stock": [
+              8,
+              30
+            ],
+            "availability": 0.4
+          }
+        }
+      },
+      "traffic": [
+        {
+          "kind": "long-haul",
+          "shipKind": "merchant",
+          "owner": "guild",
+          "factionId": "guild",
+          "count": 1
+        }
+      ],
+      "environmentIds": [
+        "frontier-space",
+        "ion-blue",
+        "amber-dust",
+        "deep-void"
+      ]
+    }
+  }
+}

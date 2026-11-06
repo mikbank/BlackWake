@@ -1,0 +1,126 @@
+{
+  "id": "kepler-frontier-003",
+  "name": "Redoubt",
+  "cultureId": "frontier",
+  "regionId": "ashen-frontier",
+  "themeId": "frontier",
+  "environmentId": "deep-void",
+  "seed": 789169717,
+  "radius": 7915,
+  "chart": {
+    "x": 2.581,
+    "y": 2.462
+  },
+  "generation": {
+    "generatorVersion": 2,
+    "seed": 789169717,
+    "presetId": "frontier"
+  },
+  "stations": [
+    {
+      "id": "kepler-frontier-003-station-1",
+      "name": "Redoubt Anchorage",
+      "position": {
+        "x": -2844.366,
+        "y": 460.581,
+        "z": 0
+      },
+      "size": "medium",
+      "services": [
+        {
+          "kind": "market",
+          "config": {
+            "profileId": "kepler-frontier-003-station-1-market"
+          }
+        },
+        {
+          "kind": "repair",
+          "config": {
+            "pricePerPoint": 2
+          }
+        }
+      ]
+    }
+  ],
+  "landmarks": [
+    {
+      "id": "kepler-frontier-003-primary",
+      "name": "Redoubt",
+      "kind": "planet",
+      "position": {
+        "x": -210,
+        "y": -22,
+        "z": 0
+      },
+      "radius": 804
+    }
+  ],
+  "gates": [
+    {
+      "id": "kepler-frontier-003-gate-kepler-frontier-001-kepler-frontier-003",
+      "name": "Cinder gateway",
+      "position": {
+        "x": -6534.675,
+        "y": -2551.126,
+        "z": 0
+      },
+      "radius": 140,
+      "connections": [
+        {
+          "id": "kepler-frontier-003-to-kepler-frontier-001",
+          "systemId": "kepler-frontier-001",
+          "gateId": "kepler-frontier-001-gate-kepler-frontier-001-kepler-frontier-003"
+        }
+      ]
+    }
+  ],
+  "traffic": [
+    {
+      "ship": {
+        "id": "kepler-frontier-003-freight-1",
+        "name": "Redoubt Runner 1",
+        "kind": "merchant",
+        "owner": "guild",
+        "factionId": "guild",
+        "role": "trader",
+        "position": {
+          "x": -2516.9965835291496,
+          "y": 259.8691040906269,
+          "z": 0
+        },
+        "velocity": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "heading": 1.5707963267948966,
+        "hull": 100,
+        "engines": 100,
+        "crew": 12,
+        "cargo": {},
+        "reload": [
+          0,
+          0
+        ]
+      },
+      "job": {
+        "kind": "freight",
+        "config": {
+          "route": [
+            {
+              "systemId": "kepler-frontier-003",
+              "stationId": "kepler-frontier-003-station-1"
+            },
+            {
+              "systemId": "drift-004",
+              "stationId": "drift-004-station-1"
+            }
+          ],
+          "quantity": 12,
+          "loadingSeconds": 5,
+          "unloadingSeconds": 6
+        }
+      }
+    }
+  ]
+}

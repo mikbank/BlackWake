@@ -1,0 +1,1531 @@
+{
+  "schemaVersion": 1,
+  "defaultCultureId": "frontier",
+  "cultures": {
+    "frontier": {
+      "id": "frontier",
+      "name": "Frontier",
+      "radioProfileId": "frontier",
+      "shipDesigns": {
+        "cutter": [
+          "industrial-cutter"
+        ],
+        "merchant": [
+          "industrial-merchant"
+        ]
+      },
+      "roleDesigns": {
+        "freight": [
+          "industrial-merchant"
+        ],
+        "passenger": [
+          "frontier-transit"
+        ],
+        "liner": [
+          "frontier-liner"
+        ],
+        "patrol": [
+          "frontier-patrol"
+        ],
+        "long-haul": [
+          "industrial-merchant"
+        ]
+      }
+    },
+    "aster": {
+      "id": "aster",
+      "name": "Aster Compact",
+      "radioProfileId": "aster",
+      "shipDesigns": {
+        "cutter": [
+          "aster-patrol"
+        ],
+        "merchant": [
+          "aster-freighter"
+        ]
+      },
+      "roleDesigns": {
+        "freight": [
+          "aster-freighter"
+        ],
+        "passenger": [
+          "aster-transit"
+        ],
+        "liner": [
+          "aster-liner"
+        ],
+        "patrol": [
+          "aster-patrol"
+        ],
+        "long-haul": [
+          "aster-freighter"
+        ]
+      }
+    }
+  },
+  "shipDesigns": {
+    "industrial-cutter": {
+      "id": "industrial-cutter",
+      "name": "Industrial cutter",
+      "kind": "cutter",
+      "modelId": "industrial-cutter"
+    },
+    "industrial-merchant": {
+      "id": "industrial-merchant",
+      "name": "Industrial hauler",
+      "kind": "merchant",
+      "modelId": "industrial-merchant"
+    },
+    "frontier-transit": {
+      "id": "frontier-transit",
+      "name": "Connector-class transport",
+      "kind": "cutter",
+      "modelId": "frontier-transit"
+    },
+    "frontier-liner": {
+      "id": "frontier-liner",
+      "name": "Aurora-class liner",
+      "kind": "merchant",
+      "modelId": "frontier-liner"
+    },
+    "frontier-patrol": {
+      "id": "frontier-patrol",
+      "name": "Marshal-class patrol cutter",
+      "kind": "cutter",
+      "modelId": "frontier-patrol"
+    },
+    "aster-freighter": {
+      "id": "aster-freighter",
+      "name": "Cradle-class freighter",
+      "kind": "merchant",
+      "modelId": "aster-freighter"
+    },
+    "aster-transit": {
+      "id": "aster-transit",
+      "name": "Thread-class transport",
+      "kind": "cutter",
+      "modelId": "aster-transit"
+    },
+    "aster-liner": {
+      "id": "aster-liner",
+      "name": "Commonlight-class liner",
+      "kind": "merchant",
+      "modelId": "aster-liner"
+    },
+    "aster-patrol": {
+      "id": "aster-patrol",
+      "name": "Warden-class patrol cutter",
+      "kind": "cutter",
+      "modelId": "aster-patrol"
+    }
+  },
+  "radioProfiles": {
+    "frontier": {
+      "id": "frontier",
+      "templates": {}
+    },
+    "aster": {
+      "id": "aster",
+      "templates": {
+        "freight.depart": [
+          "Bound for {destination} with {cargo}. Keeping the habitats supplied.",
+          "Freight outbound: {cargo} for {destination}. Every crate has a job.",
+          "Hauling {cargo} to {destination}. Leave us a little turning room."
+        ],
+        "freight.dock": [
+          "At {destination}. Unloading; please keep the cargo path clear.",
+          "Alongside {destination}. Cargo coming off. Many hands, careful fingers.",
+          "Unloading at {destination}. The freight gets its shore leave."
+        ],
+        "freight.complete": [
+          "Delivery complete. Preparing the return load; an empty trip helps nobody.",
+          "Cargo delivered. Next load, same care.",
+          "Delivery complete. Back to loading; the habitats keep eating."
+        ],
+        "navigation.charging": [
+          "Jump charging for {destination}. Please secure loose items.",
+          "Charging for {destination}; onward to {finalDestination}. One hop at a time.",
+          "Next hop: {destination}. Drive charging. Even the mugs need a berth."
+        ],
+        "navigation.transfer": [
+          "In {system}. Continuing to {destination}; keeping the route moving.",
+          "{system} entered. Next duty: reach {destination}.",
+          "Through to {system}. Still bound for {destination}; no unpacking yet."
+        ],
+        "navigation.arrival": [
+          "In {system}. Approaching {destination}; we'll take our turn.",
+          "Inbound for {destination} in {system}. Leaving room for our neighbours.",
+          "{system} reached. On to {destination}; the last leg still counts."
+        ],
+        "passenger.board": [
+          "Boarding for {destination}. Take your time; keep the aisle clear.",
+          "Service to {destination} boarding. Lend a hand if your neighbour needs one.",
+          "For {destination}, please board. Bags on racks; people get the seats."
+        ],
+        "passenger.depart": [
+          "{passengers} passengers aboard for {destination}. A seat and a safe trip for everyone.",
+          "Departing for {destination} with {passengers} aboard. Please keep the aisles clear.",
+          "{passengers} aboard. Service to {destination} departing; mind your neighbour's tea."
+        ],
+        "passenger.dock": [
+          "At {destination}. Please let those who need more room leave first.",
+          "Welcome to {destination}. Take your bags, and take your time.",
+          "{destination} reached. Check your seat for belongings; the next rider has their own."
+        ],
+        "liner.depart": [
+          "{passengers} guests bound for {destination}. Please share the window space.",
+          "On to {destination} with {passengers} guests. The view belongs to everyone.",
+          "{passengers} guests aboard for {destination}. A little time to look beyond the work."
+        ],
+        "liner.view": [
+          "Now viewing {destination}. Leave a little window for the shorter guests.",
+          "At {destination}. Take a look; the maintenance list can wait a moment.",
+          "Viewing {destination}. Please share the view, and mind your neighbour's elbow."
+        ],
+        "patrol.clear": [
+          "{sector} checked. Continuing patrol; keeping the shared lanes usable.",
+          "Survey of {sector} complete. Looking after the next stretch.",
+          "{sector} checked. Back to patrol; quiet is useful work."
+        ],
+        "patrol.respond": [
+          "{target}, cease fire. Patrol responding. Give everyone room to stand down.",
+          "{target}, stop firing. These lanes are shared; patrol is responding.",
+          "{target}, cease fire. Patrol responding; let the other crews get home."
+        ],
+        "ship.attacked": [
+          "Hostile contact. Route interrupted; nearby crews, keep clear.",
+          "Hostile ship nearby. Route on hold; assistance requested.",
+          "Route interrupted by hostile contact. Give the other traffic room."
+        ],
+        "ship.disabled": [
+          "Engines disabled. Assistance requested; please leave us room.",
+          "Unable to manoeuvre. Engines down; nearby crews, keep clear.",
+          "Engines down. We need a hand; please keep the approach clear."
+        ]
+      }
+    }
+  },
+  "themes": {
+    "frontier": {
+      "id": "frontier",
+      "background": "#090f1b",
+      "starColor": "#acc4db",
+      "bodyColor": "#4f6878",
+      "stationColor": "#66747b",
+      "accent": "#a0cbbb"
+    }
+  },
+  "stationSizes": {
+    "small": {
+      "id": "small",
+      "scale": 3,
+      "dockRadius": 495,
+      "description": "Outpost"
+    },
+    "medium": {
+      "id": "medium",
+      "scale": 4.05,
+      "dockRadius": 570,
+      "description": "Orbital station"
+    },
+    "large": {
+      "id": "large",
+      "scale": 5.1,
+      "dockRadius": 660,
+      "description": "Station complex"
+    }
+  },
+  "markets": {
+    "haven": {
+      "id": "haven",
+      "goods": {
+        "rations": {
+          "price": 12,
+          "stock": 80
+        },
+        "parts": {
+          "price": 45,
+          "stock": 25
+        },
+        "water": {
+          "price": 5,
+          "bidPrice": 4,
+          "stock": 55
+        },
+        "oxygen": {
+          "price": 10,
+          "bidPrice": 8,
+          "stock": 55
+        },
+        "grain": {
+          "price": 7,
+          "bidPrice": 5,
+          "stock": 55
+        },
+        "algae": {
+          "price": 8,
+          "bidPrice": 6,
+          "stock": 55
+        },
+        "medicine": {
+          "price": 55,
+          "bidPrice": 45,
+          "stock": 55
+        },
+        "fuel": {
+          "price": 28,
+          "bidPrice": 22,
+          "stock": 55
+        },
+        "metals": {
+          "price": 45,
+          "bidPrice": 45,
+          "stock": 0,
+          "sells": false
+        },
+        "electronics": {
+          "price": 89,
+          "bidPrice": 89,
+          "stock": 0,
+          "sells": false
+        },
+        "machinery": {
+          "price": 145,
+          "bidPrice": 145,
+          "stock": 0,
+          "sells": false
+        },
+        "spices": {
+          "price": 85,
+          "bidPrice": 85,
+          "stock": 0,
+          "sells": false
+        },
+        "fine-spirits": {
+          "price": 115,
+          "bidPrice": 115,
+          "stock": 0,
+          "sells": false
+        },
+        "luxury-textiles": {
+          "price": 150,
+          "bidPrice": 150,
+          "stock": 0,
+          "sells": false
+        },
+        "artwork": {
+          "price": 285,
+          "bidPrice": 285,
+          "stock": 0,
+          "sells": false
+        },
+        "jewellery": {
+          "price": 225,
+          "bidPrice": 225,
+          "stock": 0,
+          "sells": false
+        }
+      },
+      "name": "Haven provision exchange",
+      "description": "Agricultural provisions and life support. Buys industrial imports and selected luxury cargo."
+    },
+    "relay": {
+      "id": "relay",
+      "goods": {
+        "rations": {
+          "price": 22,
+          "stock": 20
+        },
+        "parts": {
+          "price": 26,
+          "stock": 80
+        },
+        "metals": {
+          "price": 35,
+          "bidPrice": 28,
+          "stock": 55
+        },
+        "polymers": {
+          "price": 20,
+          "bidPrice": 16,
+          "stock": 55
+        },
+        "electronics": {
+          "price": 75,
+          "bidPrice": 61,
+          "stock": 55
+        },
+        "machinery": {
+          "price": 115,
+          "bidPrice": 94,
+          "stock": 24
+        },
+        "reactor-cores": {
+          "price": 245,
+          "bidPrice": 200,
+          "stock": 8
+        },
+        "fuel": {
+          "price": 24,
+          "bidPrice": 19,
+          "stock": 55
+        },
+        "oxygen": {
+          "price": 11,
+          "bidPrice": 9,
+          "stock": 55
+        },
+        "water": {
+          "price": 8,
+          "bidPrice": 8,
+          "stock": 0,
+          "sells": false
+        },
+        "grain": {
+          "price": 12,
+          "bidPrice": 12,
+          "stock": 0,
+          "sells": false
+        },
+        "algae": {
+          "price": 13,
+          "bidPrice": 13,
+          "stock": 0,
+          "sells": false
+        },
+        "medicine": {
+          "price": 60,
+          "bidPrice": 60,
+          "stock": 0,
+          "sells": false
+        },
+        "rare-minerals": {
+          "price": 130,
+          "bidPrice": 130,
+          "stock": 0,
+          "sells": false
+        },
+        "spices": {
+          "price": 90,
+          "bidPrice": 90,
+          "stock": 0,
+          "sells": false
+        }
+      },
+      "name": "Relay industrial exchange",
+      "description": "Manufacturing exports and ship equipment. Imports habitat supplies."
+    },
+    "vesper-station-1-market": {
+      "id": "vesper-station-1-market",
+      "goods": {
+        "rations": {
+          "price": 20,
+          "stock": 72
+        },
+        "parts": {
+          "price": 31,
+          "stock": 33
+        },
+        "water": {
+          "price": 7,
+          "bidPrice": 5,
+          "stock": 55
+        },
+        "oxygen": {
+          "price": 9,
+          "bidPrice": 7,
+          "stock": 55
+        },
+        "medicine": {
+          "price": 48,
+          "bidPrice": 39,
+          "stock": 55
+        },
+        "research-data": {
+          "price": 150,
+          "bidPrice": 122,
+          "stock": 24
+        },
+        "spices": {
+          "price": 82,
+          "bidPrice": 67,
+          "stock": 24
+        },
+        "fine-spirits": {
+          "price": 110,
+          "bidPrice": 90,
+          "stock": 24
+        },
+        "metals": {
+          "price": 52,
+          "bidPrice": 52,
+          "stock": 0,
+          "sells": false
+        },
+        "electronics": {
+          "price": 94,
+          "bidPrice": 94,
+          "stock": 0,
+          "sells": false
+        },
+        "luxury-textiles": {
+          "price": 165,
+          "bidPrice": 165,
+          "stock": 0,
+          "sells": false
+        },
+        "artwork": {
+          "price": 305,
+          "bidPrice": 305,
+          "stock": 0,
+          "sells": false
+        },
+        "jewellery": {
+          "price": 240,
+          "bidPrice": 240,
+          "stock": 0,
+          "sells": false
+        }
+      },
+      "name": "Lantern cooperative market",
+      "description": "Habitat essentials, research and fine provisions for the Lantern Marches."
+    },
+    "drift-001-station-1-market": {
+      "id": "drift-001-station-1-market",
+      "goods": {
+        "rations": {
+          "price": 16,
+          "stock": 63
+        },
+        "parts": {
+          "price": 36,
+          "stock": 73
+        },
+        "ore": {
+          "price": 13,
+          "bidPrice": 10,
+          "stock": 55
+        },
+        "metals": {
+          "price": 32,
+          "bidPrice": 26,
+          "stock": 55
+        },
+        "rare-minerals": {
+          "price": 98,
+          "bidPrice": 80,
+          "stock": 55
+        },
+        "fuel": {
+          "price": 26,
+          "bidPrice": 21,
+          "stock": 55
+        },
+        "oxygen": {
+          "price": 12,
+          "bidPrice": 9,
+          "stock": 55
+        },
+        "water": {
+          "price": 10,
+          "bidPrice": 10,
+          "stock": 0,
+          "sells": false
+        },
+        "grain": {
+          "price": 14,
+          "bidPrice": 14,
+          "stock": 0,
+          "sells": false
+        },
+        "medicine": {
+          "price": 67,
+          "bidPrice": 67,
+          "stock": 0,
+          "sells": false
+        },
+        "electronics": {
+          "price": 100,
+          "bidPrice": 100,
+          "stock": 0,
+          "sells": false
+        },
+        "machinery": {
+          "price": 150,
+          "bidPrice": 150,
+          "stock": 0,
+          "sells": false
+        }
+      },
+      "name": "Lacuna mineral exchange",
+      "description": "Ore, refined metals and rare minerals. Imports food and medical supplies."
+    },
+    "drift-002-station-1-market": {
+      "id": "drift-002-station-1-market",
+      "goods": {
+        "rations": {
+          "price": 18,
+          "stock": 84
+        },
+        "parts": {
+          "price": 29,
+          "stock": 56
+        },
+        "grain": {
+          "price": 6,
+          "bidPrice": 4,
+          "stock": 55
+        },
+        "algae": {
+          "price": 7,
+          "bidPrice": 5,
+          "stock": 55
+        },
+        "water": {
+          "price": 5,
+          "bidPrice": 4,
+          "stock": 55
+        },
+        "spices": {
+          "price": 58,
+          "bidPrice": 47,
+          "stock": 24
+        },
+        "medicine": {
+          "price": 49,
+          "bidPrice": 40,
+          "stock": 55
+        },
+        "oxygen": {
+          "price": 10,
+          "bidPrice": 8,
+          "stock": 55
+        },
+        "metals": {
+          "price": 49,
+          "bidPrice": 49,
+          "stock": 0,
+          "sells": false
+        },
+        "polymers": {
+          "price": 28,
+          "bidPrice": 28,
+          "stock": 0,
+          "sells": false
+        },
+        "electronics": {
+          "price": 96,
+          "bidPrice": 96,
+          "stock": 0,
+          "sells": false
+        },
+        "machinery": {
+          "price": 155,
+          "bidPrice": 155,
+          "stock": 0,
+          "sells": false
+        },
+        "fine-spirits": {
+          "price": 125,
+          "bidPrice": 125,
+          "stock": 0,
+          "sells": false
+        }
+      },
+      "name": "Halcyon grower cooperative",
+      "description": "Grain, algae and culinary exports from local habitats."
+    },
+    "drift-003-station-1-market": {
+      "id": "drift-003-station-1-market",
+      "goods": {
+        "rations": {
+          "price": 20,
+          "stock": 57
+        },
+        "parts": {
+          "price": 30,
+          "stock": 54
+        },
+        "luxury-textiles": {
+          "price": 105,
+          "bidPrice": 86,
+          "stock": 24
+        },
+        "artwork": {
+          "price": 210,
+          "bidPrice": 172,
+          "stock": 8
+        },
+        "jewellery": {
+          "price": 165,
+          "bidPrice": 135,
+          "stock": 8
+        },
+        "fine-spirits": {
+          "price": 88,
+          "bidPrice": 72,
+          "stock": 24
+        },
+        "spices": {
+          "price": 72,
+          "bidPrice": 59,
+          "stock": 24
+        },
+        "metals": {
+          "price": 57,
+          "bidPrice": 57,
+          "stock": 0,
+          "sells": false
+        },
+        "rare-minerals": {
+          "price": 155,
+          "bidPrice": 155,
+          "stock": 0,
+          "sells": false
+        },
+        "research-data": {
+          "price": 195,
+          "bidPrice": 195,
+          "stock": 0,
+          "sells": false
+        },
+        "electronics": {
+          "price": 108,
+          "bidPrice": 108,
+          "stock": 0,
+          "sells": false
+        },
+        "medicine": {
+          "price": 68,
+          "bidPrice": 68,
+          "stock": 0,
+          "sells": false
+        }
+      },
+      "name": "Nacre artisan exchange",
+      "description": "Luxury textiles, jewellery and artwork. Imports materials and research."
+    },
+    "drift-004-station-1-market": {
+      "id": "drift-004-station-1-market",
+      "goods": {
+        "rations": {
+          "price": 14,
+          "stock": 60
+        },
+        "parts": {
+          "price": 37,
+          "stock": 35
+        },
+        "medicine": {
+          "price": 38,
+          "bidPrice": 31,
+          "stock": 55
+        },
+        "algae": {
+          "price": 8,
+          "bidPrice": 6,
+          "stock": 55
+        },
+        "oxygen": {
+          "price": 8,
+          "bidPrice": 6,
+          "stock": 55
+        },
+        "polymers": {
+          "price": 19,
+          "bidPrice": 15,
+          "stock": 55
+        },
+        "water": {
+          "price": 6,
+          "bidPrice": 4,
+          "stock": 55
+        },
+        "research-data": {
+          "price": 205,
+          "bidPrice": 205,
+          "stock": 0,
+          "sells": false
+        },
+        "rare-minerals": {
+          "price": 165,
+          "bidPrice": 165,
+          "stock": 0,
+          "sells": false
+        },
+        "electronics": {
+          "price": 105,
+          "bidPrice": 105,
+          "stock": 0,
+          "sells": false
+        },
+        "machinery": {
+          "price": 165,
+          "bidPrice": 165,
+          "stock": 0,
+          "sells": false
+        },
+        "spices": {
+          "price": 98,
+          "bidPrice": 98,
+          "stock": 0,
+          "sells": false
+        }
+      },
+      "name": "Ilex biolab market",
+      "description": "Medical supplies and bioreactor products. Imports research and equipment."
+    },
+    "drift-005-station-1-market": {
+      "id": "drift-005-station-1-market",
+      "goods": {
+        "rations": {
+          "price": 19,
+          "stock": 75
+        },
+        "parts": {
+          "price": 36,
+          "stock": 41
+        },
+        "water": {
+          "price": 8,
+          "bidPrice": 6,
+          "stock": 55
+        },
+        "medicine": {
+          "price": 58,
+          "bidPrice": 47,
+          "stock": 55
+        },
+        "fuel": {
+          "price": 30,
+          "bidPrice": 24,
+          "stock": 55
+        },
+        "electronics": {
+          "price": 92,
+          "bidPrice": 75,
+          "stock": 55
+        },
+        "luxury-textiles": {
+          "price": 155,
+          "bidPrice": 127,
+          "stock": 24
+        },
+        "fine-spirits": {
+          "price": 120,
+          "bidPrice": 98,
+          "stock": 24
+        },
+        "spices": {
+          "price": 108,
+          "bidPrice": 108,
+          "stock": 0,
+          "sells": false
+        },
+        "artwork": {
+          "price": 345,
+          "bidPrice": 345,
+          "stock": 0,
+          "sells": false
+        },
+        "jewellery": {
+          "price": 285,
+          "bidPrice": 285,
+          "stock": 0,
+          "sells": false
+        },
+        "rare-minerals": {
+          "price": 170,
+          "bidPrice": 170,
+          "stock": 0,
+          "sells": false
+        },
+        "reactor-cores": {
+          "price": 340,
+          "bidPrice": 340,
+          "stock": 0,
+          "sells": false
+        },
+        "machinery": {
+          "price": 175,
+          "bidPrice": 175,
+          "stock": 0,
+          "sells": false
+        }
+      },
+      "name": "Meridian commercial exchange",
+      "description": "A busy import market for luxury cargo, equipment and daily necessities."
+    },
+    "drift-006-station-1-market": {
+      "id": "drift-006-station-1-market",
+      "goods": {
+        "rations": {
+          "price": 15,
+          "stock": 70
+        },
+        "parts": {
+          "price": 31,
+          "stock": 72
+        },
+        "research-data": {
+          "price": 125,
+          "bidPrice": 102,
+          "stock": 24
+        },
+        "reactor-cores": {
+          "price": 225,
+          "bidPrice": 184,
+          "stock": 8
+        },
+        "fuel": {
+          "price": 20,
+          "bidPrice": 16,
+          "stock": 55
+        },
+        "polymers": {
+          "price": 18,
+          "bidPrice": 14,
+          "stock": 55
+        },
+        "electronics": {
+          "price": 78,
+          "bidPrice": 63,
+          "stock": 55
+        },
+        "water": {
+          "price": 12,
+          "bidPrice": 12,
+          "stock": 0,
+          "sells": false
+        },
+        "grain": {
+          "price": 16,
+          "bidPrice": 16,
+          "stock": 0,
+          "sells": false
+        },
+        "medicine": {
+          "price": 76,
+          "bidPrice": 76,
+          "stock": 0,
+          "sells": false
+        },
+        "spices": {
+          "price": 112,
+          "bidPrice": 112,
+          "stock": 0,
+          "sells": false
+        },
+        "fine-spirits": {
+          "price": 140,
+          "bidPrice": 140,
+          "stock": 0,
+          "sells": false
+        },
+        "artwork": {
+          "price": 330,
+          "bidPrice": 330,
+          "stock": 0,
+          "sells": false
+        }
+      },
+      "name": "Brume research exchange",
+      "description": "Research archives, power components and refinery products. Imports living supplies."
+    },
+    "kepler-frontier-001-station-1-market": {
+      "id": "kepler-frontier-001-station-1-market",
+      "goods": {
+        "rations": {
+          "price": 19,
+          "stock": 48
+        },
+        "parts": {
+          "price": 32,
+          "stock": 40
+        },
+        "ore": {
+          "price": 16,
+          "stock": 51,
+          "bidPrice": 13
+        },
+        "metals": {
+          "price": 47,
+          "stock": 80,
+          "bidPrice": 28
+        },
+        "polymers": {
+          "price": 25,
+          "stock": 50,
+          "bidPrice": 18
+        },
+        "machinery": {
+          "price": 111,
+          "stock": 18,
+          "bidPrice": 88
+        },
+        "rare-minerals": {
+          "price": 148,
+          "stock": 21,
+          "bidPrice": 94
+        },
+        "research-data": {
+          "price": 194,
+          "stock": 8,
+          "bidPrice": 126
+        }
+      }
+    },
+    "kepler-frontier-002-station-1-market": {
+      "id": "kepler-frontier-002-station-1-market",
+      "goods": {
+        "rations": {
+          "price": 14,
+          "stock": 87
+        },
+        "parts": {
+          "price": 42,
+          "stock": 53
+        },
+        "water": {
+          "price": 9,
+          "stock": 31,
+          "bidPrice": 5
+        },
+        "oxygen": {
+          "price": 14,
+          "stock": 85,
+          "bidPrice": 8
+        },
+        "grain": {
+          "price": 8,
+          "stock": 29,
+          "bidPrice": 7
+        },
+        "medicine": {
+          "price": 45,
+          "stock": 71,
+          "bidPrice": 36
+        },
+        "fuel": {
+          "price": 22,
+          "stock": 48,
+          "bidPrice": 22
+        },
+        "ore": {
+          "price": 16,
+          "stock": 33,
+          "bidPrice": 14
+        },
+        "polymers": {
+          "price": 20,
+          "stock": 39,
+          "bidPrice": 16
+        },
+        "electronics": {
+          "price": 101,
+          "stock": 19,
+          "bidPrice": 68
+        },
+        "machinery": {
+          "price": 163,
+          "stock": 26,
+          "bidPrice": 99
+        },
+        "rare-minerals": {
+          "price": 150,
+          "stock": 25,
+          "bidPrice": 86
+        },
+        "research-data": {
+          "price": 151,
+          "stock": 28,
+          "bidPrice": 130
+        }
+      }
+    },
+    "kepler-frontier-003-station-1-market": {
+      "id": "kepler-frontier-003-station-1-market",
+      "goods": {
+        "rations": {
+          "price": 16,
+          "stock": 82
+        },
+        "parts": {
+          "price": 39,
+          "stock": 43
+        },
+        "oxygen": {
+          "price": 11,
+          "stock": 65,
+          "bidPrice": 10
+        },
+        "grain": {
+          "price": 9,
+          "stock": 63,
+          "bidPrice": 7
+        },
+        "algae": {
+          "price": 10,
+          "stock": 70,
+          "bidPrice": 7
+        },
+        "medicine": {
+          "price": 59,
+          "stock": 65,
+          "bidPrice": 40
+        },
+        "ore": {
+          "price": 20,
+          "stock": 73,
+          "bidPrice": 13
+        },
+        "metals": {
+          "price": 46,
+          "stock": 73,
+          "bidPrice": 29
+        },
+        "polymers": {
+          "price": 22,
+          "stock": 53,
+          "bidPrice": 19
+        },
+        "spices": {
+          "price": 78,
+          "stock": 28,
+          "bidPrice": 64
+        }
+      }
+    },
+    "kepler-frontier-004-station-1-market": {
+      "id": "kepler-frontier-004-station-1-market",
+      "goods": {
+        "rations": {
+          "price": 20,
+          "stock": 53
+        },
+        "parts": {
+          "price": 30,
+          "stock": 54
+        },
+        "oxygen": {
+          "price": 10,
+          "stock": 68,
+          "bidPrice": 10
+        },
+        "algae": {
+          "price": 11,
+          "stock": 51,
+          "bidPrice": 9
+        },
+        "medicine": {
+          "price": 63,
+          "stock": 30,
+          "bidPrice": 36
+        },
+        "ore": {
+          "price": 17,
+          "stock": 47,
+          "bidPrice": 14
+        },
+        "metals": {
+          "price": 38,
+          "stock": 29,
+          "bidPrice": 31
+        },
+        "polymers": {
+          "price": 26,
+          "stock": 59,
+          "bidPrice": 17
+        },
+        "electronics": {
+          "price": 85,
+          "stock": 15,
+          "bidPrice": 57
+        },
+        "luxury-textiles": {
+          "price": 143,
+          "stock": 29,
+          "bidPrice": 112
+        }
+      }
+    }
+  },
+  "commodities": {
+    "rations": {
+      "id": "rations",
+      "name": "Rations",
+      "unitSize": 1,
+      "category": "Essentials",
+      "description": "Sealed meals and shipboard staples."
+    },
+    "parts": {
+      "id": "parts",
+      "name": "Machine parts",
+      "unitSize": 1,
+      "category": "Industry",
+      "description": "Replacement assemblies for ships and stations."
+    },
+    "water": {
+      "id": "water",
+      "name": "Water",
+      "unitSize": 1,
+      "category": "Essentials",
+      "description": "Purified drinking and habitat water."
+    },
+    "oxygen": {
+      "id": "oxygen",
+      "name": "Oxygen",
+      "unitSize": 1,
+      "category": "Essentials",
+      "description": "Compressed life-support gas."
+    },
+    "grain": {
+      "id": "grain",
+      "name": "Grain",
+      "unitSize": 1,
+      "category": "Agriculture",
+      "description": "Bulk cereals for habitat food production."
+    },
+    "algae": {
+      "id": "algae",
+      "name": "Algae cultures",
+      "unitSize": 1,
+      "category": "Agriculture",
+      "description": "Food and bioreactor starter cultures."
+    },
+    "medicine": {
+      "id": "medicine",
+      "name": "Medical supplies",
+      "unitSize": 1,
+      "category": "Essentials",
+      "description": "Sterile medical kits and pharmaceuticals."
+    },
+    "fuel": {
+      "id": "fuel",
+      "name": "Drive fuel",
+      "unitSize": 1,
+      "category": "Industry",
+      "description": "Refined propellant for commercial drives."
+    },
+    "ore": {
+      "id": "ore",
+      "name": "Metal ore",
+      "unitSize": 2,
+      "category": "Industry",
+      "description": "Unprocessed mineral feedstock; bulky but plentiful."
+    },
+    "metals": {
+      "id": "metals",
+      "name": "Refined metals",
+      "unitSize": 2,
+      "category": "Industry",
+      "description": "Processed structural and fabrication metals."
+    },
+    "polymers": {
+      "id": "polymers",
+      "name": "Polymers",
+      "unitSize": 1,
+      "category": "Industry",
+      "description": "Industrial resins and habitat plastics."
+    },
+    "electronics": {
+      "id": "electronics",
+      "name": "Electronics",
+      "unitSize": 1,
+      "category": "Technology",
+      "description": "Control boards and precision sensors."
+    },
+    "machinery": {
+      "id": "machinery",
+      "name": "Industrial machinery",
+      "unitSize": 3,
+      "category": "Technology",
+      "description": "Heavy manufacturing and station equipment."
+    },
+    "reactor-cores": {
+      "id": "reactor-cores",
+      "name": "Reactor components",
+      "unitSize": 4,
+      "category": "Technology",
+      "description": "Shielded high-value power-system assemblies."
+    },
+    "research-data": {
+      "id": "research-data",
+      "name": "Research archives",
+      "unitSize": 1,
+      "category": "Technology",
+      "description": "Physical storage modules containing licensed research."
+    },
+    "rare-minerals": {
+      "id": "rare-minerals",
+      "name": "Rare minerals",
+      "unitSize": 2,
+      "category": "Industry",
+      "description": "Concentrated exotic mineral samples."
+    },
+    "spices": {
+      "id": "spices",
+      "name": "Exotic spices",
+      "unitSize": 1,
+      "category": "Luxury",
+      "description": "Rare flavors prized aboard long-distance vessels."
+    },
+    "fine-spirits": {
+      "id": "fine-spirits",
+      "name": "Fine spirits",
+      "unitSize": 1,
+      "category": "Luxury",
+      "description": "Cellared spirits from established habitats."
+    },
+    "luxury-textiles": {
+      "id": "luxury-textiles",
+      "name": "Luxury textiles",
+      "unitSize": 1,
+      "category": "Luxury",
+      "description": "Decorative fabrics and tailored cabin furnishings."
+    },
+    "artwork": {
+      "id": "artwork",
+      "name": "Artwork",
+      "unitSize": 2,
+      "category": "Luxury",
+      "description": "Packed sculpture and original habitat art."
+    },
+    "jewellery": {
+      "id": "jewellery",
+      "name": "Jewellery",
+      "unitSize": 1,
+      "category": "Luxury",
+      "description": "Crafted ornaments and precious personal goods."
+    }
+  },
+  "systemIds": [
+    "ashen",
+    "kepler",
+    "vesper",
+    "drift-001",
+    "drift-002",
+    "drift-003",
+    "drift-004",
+    "drift-005",
+    "drift-006",
+    "kepler-frontier-001",
+    "kepler-frontier-002",
+    "kepler-frontier-003",
+    "kepler-frontier-004"
+  ],
+  "regions": {
+    "ashen-frontier": {
+      "id": "ashen-frontier",
+      "name": "Ashen Frontier",
+      "cultureId": "frontier"
+    },
+    "lantern-marches": {
+      "id": "lantern-marches",
+      "name": "Lantern Marches",
+      "cultureId": "aster"
+    }
+  },
+  "defaultEnvironmentId": "frontier-space",
+  "environmentProfiles": {
+    "frontier-space": {
+      "id": "frontier-space",
+      "name": "Frontier haze",
+      "rendererId": "nebula",
+      "background": {
+        "color": "#060e1a",
+        "tint": "#416d91",
+        "secondaryTint": "#695b83",
+        "textureSetId": "wisps",
+        "intensity": 0.5,
+        "coverage": 0.6,
+        "scale": 2.5
+      },
+      "stars": {
+        "density": 1,
+        "color": "#acc4db",
+        "size": 1
+      },
+      "lighting": {
+        "keyColor": "#ffe3b4",
+        "keyIntensity": 3,
+        "fillColor": "#c4d7df",
+        "fillIntensity": 1
+      },
+      "dust": {
+        "density": 0.12,
+        "color": "#99b4c4"
+      },
+      "asteroids": {
+        "density": 0.6,
+        "color": "#35434d"
+      }
+    },
+    "violet-veil": {
+      "id": "violet-veil",
+      "name": "Violet veil",
+      "rendererId": "nebula",
+      "background": {
+        "color": "#0c0818",
+        "tint": "#7953a6",
+        "secondaryTint": "#c375ad",
+        "textureSetId": "billows",
+        "intensity": 0.8,
+        "coverage": 0.85,
+        "scale": 3.2
+      },
+      "stars": {
+        "density": 0.55,
+        "color": "#e2d5f4",
+        "size": 1.1
+      },
+      "lighting": {
+        "keyColor": "#d1b8fc",
+        "keyIntensity": 2.3,
+        "fillColor": "#7e81b5",
+        "fillIntensity": 0.95
+      },
+      "dust": {
+        "density": 0.2,
+        "color": "#baa2d1"
+      },
+      "asteroids": {
+        "density": 0.25,
+        "color": "#45404f"
+      }
+    },
+    "amber-dust": {
+      "id": "amber-dust",
+      "name": "Amber dust",
+      "rendererId": "dust-field",
+      "background": {
+        "color": "#120d09",
+        "tint": "#b07939",
+        "secondaryTint": "#d9b276",
+        "textureSetId": "dust-lanes",
+        "intensity": 0.85,
+        "coverage": 0.75,
+        "scale": 3.8
+      },
+      "stars": {
+        "density": 0.4,
+        "color": "#edcfa6",
+        "size": 1.2
+      },
+      "lighting": {
+        "keyColor": "#ffdb9f",
+        "keyIntensity": 2.7,
+        "fillColor": "#b19a7a",
+        "fillIntensity": 0.85
+      },
+      "dust": {
+        "density": 0.85,
+        "color": "#d3ad75"
+      },
+      "asteroids": {
+        "density": 0.9,
+        "color": "#62554a"
+      }
+    },
+    "ion-blue": {
+      "id": "ion-blue",
+      "name": "Ion blue",
+      "rendererId": "nebula",
+      "background": {
+        "color": "#040f1b",
+        "tint": "#376faa",
+        "secondaryTint": "#66bfc8",
+        "textureSetId": "wisps",
+        "intensity": 0.85,
+        "coverage": 0.75,
+        "scale": 2.8
+      },
+      "stars": {
+        "density": 1.2,
+        "color": "#c6ecff",
+        "size": 0.95
+      },
+      "lighting": {
+        "keyColor": "#a6d8ff",
+        "keyIntensity": 3,
+        "fillColor": "#7ba6c4",
+        "fillIntensity": 1.1
+      },
+      "dust": {
+        "density": 0.3,
+        "color": "#8bbfcf"
+      },
+      "asteroids": {
+        "density": 0.2,
+        "color": "#3d505e"
+      }
+    },
+    "emerald-rift": {
+      "id": "emerald-rift",
+      "name": "Emerald rift",
+      "rendererId": "nebula",
+      "background": {
+        "color": "#04110f",
+        "tint": "#2d8174",
+        "secondaryTint": "#91b6a0",
+        "textureSetId": "billows",
+        "intensity": 0.75,
+        "coverage": 0.8,
+        "scale": 2.1
+      },
+      "stars": {
+        "density": 0.8,
+        "color": "#c1e3d3",
+        "size": 1
+      },
+      "lighting": {
+        "keyColor": "#c5ecd9",
+        "keyIntensity": 2.7,
+        "fillColor": "#79aa9c",
+        "fillIntensity": 0.9
+      },
+      "dust": {
+        "density": 0.18,
+        "color": "#98bdad"
+      },
+      "asteroids": {
+        "density": 0.15,
+        "color": "#3a514b"
+      }
+    },
+    "deep-void": {
+      "id": "deep-void",
+      "name": "Deep void",
+      "rendererId": "clear-space",
+      "background": {
+        "color": "#02040a",
+        "tint": "#192c47",
+        "secondaryTint": "#1e3046",
+        "textureSetId": "none",
+        "intensity": 0,
+        "coverage": 0,
+        "scale": 1
+      },
+      "stars": {
+        "density": 1.35,
+        "color": "#d9e7f7",
+        "size": 0.9
+      },
+      "lighting": {
+        "keyColor": "#d2dcef",
+        "keyIntensity": 3,
+        "fillColor": "#6e83a1",
+        "fillIntensity": 0.7
+      },
+      "dust": {
+        "density": 0,
+        "color": "#7a9bb5"
+      },
+      "asteroids": {
+        "density": 0.06,
+        "color": "#26323f"
+      }
+    }
+  },
+  "spatialVersion": 1
+}
